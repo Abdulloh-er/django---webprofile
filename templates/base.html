@@ -1,0 +1,48 @@
+{% load static %}
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{% block title %}Website Santri{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}" />
+  </head>
+
+  <body>
+    <header class="topper">
+      <img src="{% static 'image/logo (1).webp' %}" width="90px" alt="LOGO" />
+      <h1>{% block page_title %}Website Santri{% endblock %}</h1>
+      <h3>{% block subtitle %}Profil Digital{% endblock %}</h3>
+    </header>
+
+    <hr />
+    <div id="selection">
+      <ul>
+        <a href="{% url 'home' %}">Beranda</a>
+        |
+        <a href="{% url 'biodata' %}">Biodata</a>
+        |
+        <a href="{% url 'jadwal' %}">Jadwal</a>
+        |
+        <a href="{% url 'galeri' %}">Galeri</a>
+        |
+        <a href="{% url 'feedback' %}">Feedback</a>
+      </ul>
+    </div>
+
+    <hr />
+
+    <main>{% block content %} {% endblock %}</main>
+
+    <hr />
+
+    <div class="footer-bio">
+      <h2>KONTAK SAYA</h2>
+      <p>
+        <a href="https://www.instagram.com/b_dullsc/">Instagram: b_dullsc</a><br /><br />
+        <a href="mailto:abdul.prime.id@gmail.com">Email: abdul.prime.id@gmail.com</a><br /><br />
+        <a href="https://x.com/Aerang_10">X: Aerang_10</a><br /><br />
+        <a href="https://wa.me/62895402649662" target="_blank">WhatsApp: 62895402649662</a>
+      </p>
+    </div>
+  </body>
+</html>

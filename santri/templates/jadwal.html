@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block page_title %}BIODATA SANTRI{% endblock %}
+
+{% block subtitle %}KELAS 10 A - ASRAMA IBN TAIMIYYAH{% endblock %}
+
+{% block content %}
+
+<div class="table-jadwal">
+         <h3><span class="tag">|</span> JADWAL KEGIATAN BELAJAR</h3>
+    <table border="1" id="tableatas">
+        <thead class="bg">
+            <th colspan="2">Waktu</th>
+            <!-- <th>waktu</th> -->
+            <th rowspan="2">Hari</th>
+            <th class="tableatas-kegiatan" rowspan="2">Kegiatan</th>
+            <tr>
+                <th>MULAI</th>
+                <th>SELESAI</th>
+                <!-- <td>Senin</td>
+                <td>Pelajarn teori web dasar (TEORI HTML)</td> -->
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>08:00</td>
+                <td>10:00</td>
+                <td>senin</td>
+                <td >Pelajaran web dasar (TEORI HTML)</td>
+            </tr>
+            <tr>
+                <td>10:00</td>
+                <td>10:30</td>
+                <!-- <td>senin</td> -->
+                <td colspan="2">ISTIRAHAT  (snack & shalat dhuha)</td>
+            </tr>
+            <tr>
+                <td>10:30</td>
+                <td>12:00</td>
+                <td>senin</td>
+                <td>Latihan bikin web</td>
+            </tr>
+            <tr>
+                <td>14:00</td>
+                <td>16:00</td>
+                <td>selasa</td>
+                <td>Pelajaran web dasar (teori CSS & box model)</td>
+            </tr>
+            <tr>
+                <td>16:00</td>
+                <td>16:45</td>
+                <td>selasa</td>
+                <td>olahraga(renang)</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    </div>
+
+{% endblock %}

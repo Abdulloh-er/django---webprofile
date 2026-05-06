@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block page_title %}FEEDBACK{% endblock %}
+
+{% block subtitle %}KELAS 10 A - ASRAMA IBN TAIMIYYAH{% endblock %}
+
+{% block content %}
+
+<div class="bag-1">
+        <h3>
+            <span class="tag">|</span> Formulir kotak saran
+        </h3>
+        <p>
+            Berikan masukan terbaik anda disini...
+        </p>
+        <div class="formulir-feedback">
+            <label for="innama">Masukan nama anda :</label> <br>
+            <input  type="text" name="nama" id="innama">
+
+            <br> <br>
+
+            <label for="inmail">Masukan email anda :</label> <br>
+            <input type="email" name="mail" id="inmail">
+
+            <br> <br>
+
+            <label for="inrating">Rating web ini 1-100 :</label> <br>
+            <input type="number" name="rating" id="inrating">
+
+            <br> <br>
+
+            <h4>Rekomendasikan Web ini  :</h4>
+            <label for="inintasyar">YA</label>
+            <input type="radio" name="intasyar" id="inintasyar">
+
+            <label for="inintasyar1">MUNGKIN</label>
+            <input type="radio" name="intasyar" id="inintasyar1">
+
+            <label for="inintasyar2">TIDAK</label>
+            <input type="radio" name="intasyar" id="inintasyar2"> <br> <br>
+
+            <label for="halaman">Halaman yang paling menarik?</label>
+            <select name="pilihanditangan" id="halaman">
+                <option value="bio">BIODATA</option>
+                <option value="galeri">GALERI</option>
+                <option value="jadwal">JADWAL</option>
+            </select>
+
+            <br> <br>
+
+            <label for="inpesan">Tinggalkan Saran, pesan & kritik :</label> <br>
+            <textarea class="ukuran-pesan" name="pesan" id="inpesan"></textarea>
+
+            
+            
+            <div id="submit-x">
+                <br>
+                <button type="reset">HAPUS</button>
+                <button type="submit">SUBMIT</button>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

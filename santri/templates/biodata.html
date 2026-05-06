@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Biodata{% endblock %}
+
+{% block page_title %}BIODATA SANTRI{% endblock %}
+
+{% block subtitle %}KELAS 10 A - ASRAMA IBN TAIMIYYAH{% endblock %}
+
+{% block content %}
+
+  <div class="bag-1">
+      <h3><span class="tag"><b>|</b></span> Biodata Singkat</h3>
+
+      <img class="fotodirisendiri"
+          src="{% static 'image/foto.jpg' %}"
+          width="200px"
+          alt="MUKA SENDIRI">
+
+      <p class="deskripbio">
+          Assalamualaikum warahmatullahi wabarakatuh, Saya Abdulloh seorang <br>
+          pelajar dari sekolah <b>HSI BOARDING SCHOOL</b>, Saya sangat suka <br>
+          belajar Ngoding, karena memang passion saya dari dulu ada di bidang <br>
+          Teknologi atau apapun yang berhubungan dengan Komputer.
+      </p>
+  </div>
+
+  <div id="hobi-bio">
+      <h3><span class="tag">|</span> Hobi</h3>
+      <ul>
+          <li><a href="https://www.mobilelegends.com/" target="_blank">MAIN GAME</a></li>
+          <li><a href="https://id.wikipedia.org/wiki/Tidur" target="_blank">TIDUR</a></li>
+          <li><a href="https://pasarsegar.co.id/product/baso-urat-bandung/" target="_blank">MAKAN BAKSO URAT</a></li>
+          <li><a href="https://gofood.co.id/semarang/restaurant/mie-ayam-pak-bambang-genuk-2ba052c1-ccfa-4f10-a656-a3be10b7751d" target="_blank">MIE AYAM PAK BAMBANG</a></li>
+      </ul>
+  </div>
+
+  <div class="bag-1">
+      <h3><span class="tag">|</span> CITA CITA</h3>
+      <p>
+          Saya mau jadi seorang <b>FULL STACK DEVELOPER</b> <br>
+          yang benar-benar ahli dalam frontend & backend.
+      </p>
+  </div>
+  
+{% endblock %}
